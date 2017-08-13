@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: n8qBHwAbHTrTPDdNJ0mJfT+M4UNostQMK3yZbFvpJNTjqHB61ihS418l/85JGAHS0zce8mYZF5LgjWU8sIlkvNy2nKEfFxnNjqDY4ns31iA/4ELoEKdxoCaKDkqDnTGyWLtWOj5xN4g3Qj76K7uRkUqploVXPhjvJhT4HyCuKszgewgiynojoTS7aNxpObITYbmKfjUQThYGipX9IfwCOMLooRix+wA1lWbPes2S8ywE/vvcccwhGPnkgxjvwnVZNwY4B2Qn/kPIqo3Ip3zXOhdIZt4D6PtEAhpZh/zOlmH3dOSEdLDxVvQ5quFmkQGll9hLGgedPhavwb7cmwBxrbDV4FBPuzKokPIVRbFw0BIBwJMd6Dm7v7J1lTIJgM+p2jxaxvpbSrSD5SIy5r3NsuAP/VRJ0mAEDA8qecOWW49QxKxE7j5sCG69STZHIXYazPIvDObfBwNStZae/IpjYzLTyMZDak78PuGvrmYtwPzLeZGx31B55DWG36Wu0wsG6h793bOk/HkYcaLT2XuU/Z/6sCboZUMrJV+JyywZSXq16nUOaoN0PI49EIbFMaRhZ+6N37uNxv8/eQtsrKQ5lfOXB67o3baA7UFwB4Jj3UI202CzWqdKYW3xy+gkOUfwpn0KBH4MEeag01ThgYMWchvRGmtlzv2zH8h4RRgq/vo=
+  app: node-restaurants-app-mongoose
+  on:
+    repo: imagineLife/node-restaurants-app-mongoose
+    app: whispering-tor-18462
